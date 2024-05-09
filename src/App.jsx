@@ -1,4 +1,5 @@
 import "./App.css";
+import CherryBranch from "./assets/aboutmebg2.png";
 import Profile from "./assets/Photo.png";
 import Project1 from "./assets/project1.png";
 import Project2 from "./assets/project2.png";
@@ -290,7 +291,7 @@ function App() {
 
           {/*Skills section*/}
           <section id="skills">
-          <img className="skillsbg" url="../assets/aboutmebg2.png" alt="cherry blossom branch" />
+          <img src={CherryBranch} className="skillsbg" alt="cherry blossom branch" />
             <div className="max-w-4xl m-auto relative container m-auto px-4 py-14">
               <h2 className="text-2xl font-semibold text-center">
                 Technologies and Skills
