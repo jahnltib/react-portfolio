@@ -103,7 +103,7 @@ function App() {
               </div>
               <div className="relative">
                 <div className="
-                after:bg-[url('./large-long.png')] 
+                after:bg-[url('../public/large-long.png')] 
                 after:bg-contain 
                 after:block 
                 after:bg-no-repeat 
@@ -113,7 +113,7 @@ function App() {
                 after:top-0 
                 after:-left-20 
                 sm:after:-left-14
-                before:bg-[url('./small.png')] 
+                before:bg-[url('../public/small.png')] 
                 before:bg-contain 
                 before:block 
                 before:bg-no-repeat 
@@ -290,7 +290,7 @@ function App() {
 
           {/*Skills section*/}
           <section id="skills">
-          <img className="skillsbg" src="/src/assets/aboutmebg2.png" alt="cherry blossom branch" />
+          <img className="skillsbg" url="./assets/aboutmebg2.png" alt="cherry blossom branch" />
             <div className="max-w-4xl m-auto relative container m-auto px-4 py-14">
               <h2 className="text-2xl font-semibold text-center">
                 Technologies and Skills
