@@ -11,6 +11,7 @@ import GitHub from "./assets/githublogo.png";
 import ArrowDown from "./assets/arrow-down.svg";
 import { useEffect, useState } from "react";
 
+ 
 function App() {
   const [scrolling, setScrolling] = useState(false);
 
@@ -31,6 +32,9 @@ function App() {
 
   return (
     <div className="main container m-auto">
+
+
+        {/* Navigation Bar */}
         <div className="max-w-4xl m-auto relative">
           <header className={`${scrolling ? 'border-b border-gray-900' : ''} fixed left-0 right-0 top-0 z-20 bg-black`} id="home">
             <div className="container m-auto px-4 py-6 max-w-4xl bg-black">
@@ -61,7 +65,10 @@ function App() {
             </div>
           </header>
         </div>
+        
         <main className="relative mt-28">
+
+
           {/* Intro/Banner section */}
           <section id="Banner">
             <div className="max-w-4xl m-auto relative container m-auto px-4 pt-12 pb-12 sm:pt-20 flex flex-col sm:flex-row gap-6 text-center sm:text-left">
@@ -81,6 +88,9 @@ function App() {
                   </a>
                   <div className="max-w-4xl mx-auto relative flex justify-center sm:justify-between mt-5 px-4 py-6">
                     <div>
+
+
+                      {/* Social Icons */}
                       <ul className="flex gap-4">
                         <li>
                           <a href="mailto:jahnltib@gmail.com" className="transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110">
@@ -98,41 +108,35 @@ function App() {
                           </a>
                         </li>
                       </ul>
+
+
                     </div>
                   </div>
                 </div>
               </div>
+
+
+              {/* Profile Picture, Leaves, and Cherry Blossom in Hero Section*/}
               <div className="relative">
                 <div className="
-                after:bg-[url('../public/large-long.png')] 
-                after:bg-contain 
-                after:block 
-                after:bg-no-repeat 
-                after:w-[390px] 
-                after:h-[290px] 
-                after:absolute 
-                after:top-0 
-                after:-left-20 
-                sm:after:-left-14
-                before:bg-[url('../public/small.png')] 
-                before:bg-contain 
-                before:block 
-                before:bg-no-repeat 
-                before:w-[220px] before:h-[220px] 
-                before:absolute 
-                before:bottom-9 
-                before:-right-11
-                drop-shadow-lg">
+                  after:bg-[url('../public/large-long.png')] after:bg-contain after:block after:bg-no-repeat after:w-[390px] after:h-[290px] after:absolute after:top-0 after:-left-20 sm:after:-left-14
+                  before:bg-[url('../public/small.png')] before:bg-contain before:block before:bg-no-repeat before:w-[220px] before:h-[220px] before:absolute before:bottom-9 before:-right-11
+                  drop-shadow-lg">
                   <img src={Profile} className="relative z-10 w-[380px] m-auto sm:w-[600px]" />
                 </div>
               </div>
             </div>
           </section>
+
+
           {/* Projects section */}
           <section id="projects">
             <div className="max-w-4xl m-auto relative container m-auto px-4 sm:py-12">
               <h2 className="text-2xl font-semibold">Projects</h2>
+
+              {/* First Row */}
               <div className="flex flex-col sm:flex-row gap-10 mt-11">
+                {/* Project 1 */}
                 <div className="border border-gray-500 rounded-md p-5 flex-1">
                   <img src={Project1} className="w-full h-auto border rounded border-none" />
                   <h3 className="text-2xl font-semibold mt-8">
@@ -157,6 +161,8 @@ function App() {
                     </button>
                   </div>
                 </div>
+
+                {/* Project 2 */}
                 <div className="border border-gray-500 rounded-md p-5 flex-1">
                   <img src={Project2} className="w-full h-auto border rounded border-none" />
                   <h3 className="text-2xl font-semibold mt-8">
@@ -182,7 +188,10 @@ function App() {
                   </div>
                 </div>
               </div>
+              
+              {/* Second Row */}
               <div className="flex flex-col sm:flex-row  gap-10 mt-11">
+                {/* Project 3 */}
                 <div className="border border-gray-500 rounded-md p-5 flex-1">
                   <img src={Project3} className="w-full h-auto border rounded border-none" />
                   <h3 className="text-2xl font-semibold mt-8">
@@ -208,6 +217,9 @@ function App() {
                     </button>
                   </div>
                 </div>
+
+
+                {/* Project 4 */}
                 <div className="border border-gray-500 rounded-md p-5 flex-1">
                   <img src={Project4} className="w-full h-auto border rounded border-none" />
                   <h3 className="text-2xl font-semibold mt-8">
@@ -226,68 +238,10 @@ function App() {
                   </div>
                 </div>
               </div>
+
             </div>
           </section>
 
-          {/* Technoglies section (unused)
-          <section className="py-10" id="technologies">
-            <div className="container m-auto px-4">
-              <h2 className="text-2xl font-semibold">Technologies</h2>
-              <div className="mt-14">
-                <div>
-                  <div className="flex justify-between items-center">
-                    <h2 className="font-semibold">HTML</h2>
-                    <p className="text-gray-500">Advanced</p>
-                  </div>
-                  <span className="w-full h-2 mt-2 bg-gradient-to-t from-green-600 to-green-800 block rounded-md" />
-                </div>
-                <div className="mt-8">
-                  <div className="flex justify-between items-center">
-                    <h2 className="font-semibold">CSS, Sass & Bootstrap</h2>
-                    <p className="text-gray-500">Advanced</p>
-                  </div>
-                  <span className="w-full h-2 mt-2 bg-gradient-to-t from-green-600 to-green-800 block rounded-md" />
-                </div>
-                <div className="mt-8">
-                  <div className="flex justify-between items-center">
-                    <h2 className="font-semibold">
-                      JavaScript, TypeScript, JQuery
-                    </h2>
-                    <p className="text-gray-500">Advanced</p>
-                  </div>
-                  <span className="w-full h-2 mt-2 bg-gradient-to-t from-green-600 to-green-800 block rounded-md" />
-                </div>
-                <div className="mt-8">
-                  <div className="flex justify-between items-center">
-                    <h2 className="font-semibold">UI design in Figma</h2>
-                    <p className="text-gray-500">Advanced</p>
-                  </div>
-                  <span className="w-[75%] h-2 mt-2 bg-gradient-to-t from-green-600 to-green-800 block rounded-md" />
-                </div>
-                <div className="mt-8">
-                  <div className="flex justify-between items-center">
-                    <h2 className="font-semibold">Angular</h2>
-                    <p className="text-gray-500">Advanced</p>
-                  </div>
-                  <span className="w-[50%] h-2 mt-2 bg-gradient-to-t from-green-600 to-green-800 block rounded-md" />
-                </div>
-                <div className="mt-8">
-                  <div className="flex justify-between items-center">
-                    <h2 className="font-semibold">React</h2>
-                    <p className="text-gray-500">Advanced</p>
-                  </div>
-                  <span className="w-[90%] h-2 mt-2 bg-gradient-to-t from-green-600 to-green-800 block rounded-md" />
-                </div>
-                <div className="mt-8">
-                  <div className="flex justify-between items-center">
-                    <h2 className="font-semibold">React Native</h2>
-                    <p className="text-gray-500">Advanced</p>
-                  </div>
-                  <span className="w-[45%] h-2 mt-2 bg-gradient-to-t from-green-600 to-green-800 block rounded-md" />
-                </div>
-              </div>
-            </div>
-          </section> */}
 
           {/*Skills section*/}
           <section id="skills">
@@ -339,6 +293,9 @@ function App() {
               </div>
             </div>
           </section>
+
+
+          {/* About Me Section */}
           <section className="py-8" id="aboutme">
             <div className="max-w-2xl m-auto relative container border border-gray-500 rounded-md p-8 bg-neutral-950 bg-opacity-95">
               <h2 className="text-4xl font-semibold text-center">About me</h2>
@@ -351,8 +308,8 @@ function App() {
                     Relevant Coursework: Principles of Software Engineering, Web Frontend Engineering, Algorithm Engineering, Operating Systems Concepts, File Structures and Databases.
                   </p>
                 </div>
-                <div className="pl-24 mt-24 relative before:w-4 before:h-4 before:bg-gradient-to-t before:from-green-600 before:to-green-800 before:absolute before:rounded-full before:left-[57px]">
-                  <h3 className="absolute left-0 text-lg font-semibold">2023</h3>
+                <div className="pl-24 mt-24 relative before:w-4 before:h-4 before:bg-gradient-to-t before:from-green-600 before:to-green-800 before:rounded-full before:left-[57px]">
+                  <h3 className="left-0 text-lg font-semibold">2023</h3>
                   <h className="font-bold gradient-text">Bay Port Real Estate Group</h>
                   <h2 className="semi-bold mb-4">Freelance Web Development</h2>
                   <p className="mt-2 text-gray-400">
@@ -379,6 +336,7 @@ function App() {
         <footer>
         </footer>
         {
+          /* Return To Top Button */
           scrolling && (
             <button className="fixed block right-8 bottom-0 w-24" onClick={() => {
               window.scrollTo(0,0);

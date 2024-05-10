@@ -9,7 +9,7 @@ body {
 
 .gradient-text {
     -webkit-background-clip: text;
-    @apply bg-gradient-to-t from-green-400 to-lime-900 text-transparent;
+    @apply bg-gradient-to-t from-green-400 to-lime-900 text-transparent; /* Gradient text style for h1 headings. */
     overflow: hidden;
     border-right: 2px solid #fff;
     animation: typing-text steps(40) 3.5s forwards, blink ease 0.75s infinite;
@@ -19,7 +19,7 @@ body {
     width: 0;
 }
 
-
+/* Target About Me Section Separately to include a background photo (The cherry blossom)  */
 #aboutme {
     padding: 64px 0; 
     background-image: url('./assets/aboutmebg.png'); 
@@ -32,7 +32,7 @@ body {
     padding: 64px 0;
 }
 
-
+/* Adjust the z-index and position to position the secong cherry blossom branch under the skills section.  */
 .skillsbg {
     opacity: 44%;
     z-index: -1;
