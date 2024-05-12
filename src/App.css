@@ -45,7 +45,7 @@ body {
 
 /* Fixed issue where width causing oversized page  */
 .aboutheading {
-    max-width: 250px;
+    max-width: 240px;
 }
 
 @keyframes typing-text {
