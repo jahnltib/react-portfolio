@@ -302,15 +302,15 @@ function App() {
               <div className="mt-12 p-4 relative before:absolute before:top-10 before:left-20 before:rounded-full before:bottom-10 sm:before:bottom-2 before:w-0.5 before:bg-white">
                 <div className="pl-24 relative before:w-4 before:h-4 before:bg-gradient-to-t before:from-green-600 before:to-green-800 before:absolute before:rounded-full before:left-[57px]">
                   <h3 className="absolute left-0 text-lg font-semibold">NOW</h3>
-                  <h className="font-bold gradient-text">Cal State University, Fullerton</h>
+                  <h className="aboutheading    font-bold gradient-text">Cal State University, Fullerton</h>
                   <h2 className="semi-bold mb-4">B.S. Computer Science</h2>
                   <p className="mt-2 text-gray-400">
                     Relevant Coursework: Principles of Software Engineering, Web Frontend Engineering, Algorithm Engineering, Operating Systems Concepts, File Structures and Databases.
                   </p>
                 </div>
-                <div className="pl-24 mt-24 relative before:w-4 before:h-4 before:bg-gradient-to-t before:from-green-600 before:to-green-800 before:rounded-full before:left-[57px]">
-                  <h3 className="left-0 text-lg font-semibold">2023</h3>
-                  <h className="font-bold gradient-text">Bay Port Real Estate Group</h>
+                <div className="pl-24 mt-24 relative before:w-4 before:h-4 before:bg-gradient-to-t before:from-green-600 before:to-green-800 before:absolute before:rounded-full before:left-[57px]">
+                  <h3 className="absolute left-0 text-lg font-semibold    ">2023</h3>
+                  <h className="aboutheading font-bold gradient-text">Bayport Real Estate Group</h>
                   <h2 className="semi-bold mb-4">Freelance Web Development</h2>
                   <p className="mt-2 text-gray-400">
                     Developed a company site for a professional real
@@ -321,7 +321,7 @@ function App() {
                 </div>
                 <div className="pl-24 mt-24 relative before:w-4 before:h-4 before:bg-gradient-to-t before:from-green-600 before:to-green-800 before:absolute before:rounded-full before:left-[57px]">
                   <h3 className="absolute left-0 text-lg font-semibold">2022</h3>
-                  <h className="font-bold gradient-text">Sharetea</h>
+                  <h className="aboutheading font-bold gradient-text">Sharetea</h>
                   <h2 className="semi-bold mb-4">Barista, Shift Manager</h2>
                   <p className="mt-2 text-gray-400">
                     Coordinated team to handle the high demand of a busy boba shop.
